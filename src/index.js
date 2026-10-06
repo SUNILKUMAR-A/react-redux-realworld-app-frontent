@@ -7,7 +7,7 @@ import { Route, Switch } from 'react-router-dom';
 import { ConnectedRouter } from 'react-router-redux';
 
 import App from './components/App';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.render((
   <Provider store={store}>
     <ConnectedRouter history={history}>
