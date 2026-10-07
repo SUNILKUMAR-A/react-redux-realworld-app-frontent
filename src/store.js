@@ -7,7 +7,7 @@ import reducer from './reducer';
 import { routerMiddleware } from 'react-router-redux'
 import createHistory from 'history/createBrowserHistory';
 
-export const history = createHistory();
+export const history = createHistory({ basename: process.env.PUBLIC_URL || '/' });
 
 // Build the middleware for intercepting and dispatching navigation actions
 const myRouterMiddleware = routerMiddleware(history);
